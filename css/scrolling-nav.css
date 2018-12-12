@@ -3,18 +3,14 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-
-header {
-  padding: 154px 0 100px;
+body, html {
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
   header {
-    padding: 156px 0 100px;
-    background-image: url(../img/uvod.svg);
-    min-height: 1100px;
-    background-repeat: no-repeat;
-    background-position: center; 
+    height:100%
   }
 }
 
@@ -23,16 +19,23 @@ section {
 }
 
 .quotes {
-  background-image: url(../img/postoj.png);
+  background-size: 100%;
   background-attachment: fixed;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 400px;
   position: relative;
 }
 
+.quotes-blue {
+  background-image: url(../img/machula.jpg);
+}
+
+.quotes-orange {
+  background-image: url(../img/machula2.jpg);
+}
 .quotes-overlay {
-  background-color: rgba(34, 34, 34, 0.71);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -48,10 +51,93 @@ section {
 
 .order-box {
   padding-top: 10px;
-  background-color: rgb(219, 219, 219)
+  background-color: rgb(242, 217, 163);
+}
+
+.order-box2 {
+  padding-top: 10px;
+  background-color: rgb(201, 215, 226);
+}
+
+.order-box3 {
+  padding-top: 10px;
+  background-color: rgb(61, 61, 61);
+  color: rgb(211, 208, 208)
 }
 
 .form-input {
   padding: 10px;
   height: 40px; 
+}
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+#swiper-background {
+  height: 100%;
+  background-image: url(../img/Swiper_adela.jpg);
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+#swiper-background2 {
+  height: 100%;
+  background-image: url(../img/Swiper_mesto.jpg);
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important; 
+}
+
+.swiper-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.innerslider {
+  display: none;
+  margin: auto;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  padding-top:150px;
+}
+
+.slidercontent {
+  margin: auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+p.slidercontent-title {
+  margin: auto;
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  padding: 10px 0;
+  font-weight: 700;
+  font-family: 'Poppins', Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+}
+
+.slidercontent-black {
+  color: rgb(32, 22, 9);
+}
+
+.slidercontent-white {
+  color: rgb(233, 169, 85);
 }
