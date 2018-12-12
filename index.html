@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -22,6 +21,8 @@
     <!-- Owl Carousel Css -->
     <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="vendor/swiper/css/swiper.min.css">
 
   </head>
 
@@ -40,10 +41,16 @@
               <a class="nav-link js-scroll-trigger" href="#about">O knihách</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#authors">O autoroch</a>
+              <a class="nav-link js-scroll-trigger" href="#authors">O tvorcoch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#reviews">Recenzie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#order">Objednávky</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -51,7 +58,25 @@
     </nav>
 
     <header class="text-white">
-      <div class="container text-center">
+      <div class="swiper-container">
+        <div class="swiper-overlay"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first-slide" id="swiper-background">
+              <div class="innerslider">
+                  <div class="slidercontent" style="opacity: 1;">
+                      <p class="slidercontent-title slidercontent-black animated fadeInDown">Adela</p>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" id="swiper-background2">
+              <div class="innerslider">
+                  <div class="slidercontent" style="opacity: 1;">
+                      <p class="slidercontent-title slidercontent-white animated fadeInDown">Machula</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </header>
 
@@ -93,13 +118,13 @@ prekvapivej pointy. A Vianoce sa môžu začať...</p>
       </div>
     </section>
 
-    <section class="quotes" data-stellar-background-ratio="0.5">
-		<div class="quotes-overlay"></div>
+    <section class="quotes quotes-orange" data-stellar-background-ratio="0.5">
+      <div class="quotes-overlay"></div>
     </section>
 
     <section id="authors">
         <div class="container">
-          <h1 class="text-center" style="padding-bottom: 20px;"> O autoroch </h1>
+          <h1 class="text-center" style="padding-bottom: 20px;"> O tvorcoch </h1>
           <hr style="border-color: rgb(212, 211, 211); padding-bottom: 20px;">
           <div class="row">
             <div class="col-md-4 mx-auto">
@@ -120,6 +145,31 @@ prekvapivej pointy. A Vianoce sa môžu začať...</p>
           </div>
         </div>
     </section>
+
+    <section id="reviews">
+      <div class="container">
+        <h1 class="text-center" style="padding-bottom: 20px;"> Recenzie </h1>
+        <hr style="border-color: rgb(212, 211, 211); padding-bottom: 20px;">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <h2>Recenzia</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <h2>Recenzia</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <h2>Recenzia</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+    <section class="quotes quotes-blue" data-stellar-background-ratio="0.5">
+      <div class="quotes-overlay"></div>
+    </section>
     
     <section id="order">
       <div class="container">
@@ -130,85 +180,34 @@ prekvapivej pointy. A Vianoce sa môžu začať...</p>
             <h2>Adela, ani to neskúšaj!</h3>
             <p class="lead">6 Eur</p>
           </div>
-          <div class="col-md-4 mx-auto order-box">
+          <div class="col-md-4 mx-auto order-box2">
             <h2 class="text-center">Strašidelné mesto</h2>
             <p class="lead text-center">6 Eur</p>
           </div>
-          <div class="col-md-3 mx-auto order-box">
+          <div class="col-md-3 mx-auto order-box3">
             <h2 class="text-center">Kombo</h2>
             <p class="lead text-center">10 Eur</p>
           </div>
         </div>
-        <br />
         <div class="row">
           <div class=".col-md-6 mx-auto">
             <p class="text-center">Knihy si mozte objednat prostrednictvom emailu.</p>
             <p class="text-center">Pri objednávke nad 40€ poštovné zadarmo.</p>
-            <p class="text-center"><i class="fa fa-envelope" aria-hidden="true"></i> bukShop@gmail.com </p>
-          </div>
-          <div class=".col-md-6 mx-auto">
-              <div class="form-group">
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Meno *" id="form-firstname">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Priezvisko *" id="form-surname">
-                  </div>
-                  <div class="form-input col-md-12 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Firma" id="form-company">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="IČO" id="form-ico">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="DIČ" id="form-dic">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Adresa *" id="form-address">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Mesto *" id="form-city">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="PSČ *" id="form-zip">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Štát *" id="form-state" value="Slovenská republika" disabled="">
-                  </div>
-                  <div class="contact-mail col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="E-mail *" id="form-email">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Telefón" id="form-phone">
-                  </div>
-                  <div class="form-input col-md-12 col-sm-12 col-xs-12">
-                      <select id="form-variant">
-                          <option value="1">Adela, ani to neskúšaj! (€ 6,00)</option>
-                          <option value="2">Strašidelné mesto (€ 6,00)</option>
-                          <option value="3">Kombo (€ 10,00)</option>
-                      </select>
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <input type="text" placeholder="Počet kusov *" id="form-quantity">
-                  </div>
-                  <div class="form-input col-md-6 col-sm-12 col-xs-12">
-                      <select id="form-transport">
-                          <option value="1">Platba vopred na faktúru, doporučene (€ 3,00)</option>
-                          <option value="2">Platba na dobierku SR (€ 4,00 SR)</option>
-                      </select>
-                  </div>
-                  <div class="form-input col-md-12 col-sm-12 col-xs-12">
-                     Celková suma objednávky: <strong><span id="form-sum">0</span> €</strong>
-                  </div>
-                  <div class="contact-bottom">
-                      <a href="#" class="btn contact-button" id="form-submit">Záväzne objednať s povinnosťou platby</a>
-                  </div>
-              </div>
           </div>
         </div>
       </div>
+    </section>
 
-
+    <section id="contact">
+      <div class="container">
+        <h1 class="text-center" style="padding-bottom: 20px;"> Kontakt </h1>
+        <div class="row">
+          <div class=".col-md-6 mx-auto">
+            <p class="text-center"><i class="fa fa-envelope" aria-hidden="true"></i> bukShop@gmail.com </p>
+            <p class="text-center"><i class="fa fa-book" aria-hidden="true"></i> vydavateľstvo  <a href="https://www.cathedra.sk/">cathedra</a></p>
+          </div>
+        </div>  
+      </div>
     </section>
 
     <!-- Footer -->
@@ -221,29 +220,19 @@ prekvapivej pointy. A Vianoce sa môžu začať...</p>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <script src="vendor/stellar/jquery.stellar.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Stellar Js -->
-    <script src="vendor/stellar/jquery.stellar.min.js"></script>
-
+    <!-- Swiper Js -->
+    <script src="vendor/swiper/js/swiper.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
 
     <!-- Owl Carousel Js -->
     <script src="vendor/owl-carousel/owl.carousel.js"></script>
-
-    <script>
-        $(function(){
-          $.stellar({
-            horizontalScrolling: false,
-            verticalOffset: 40
-          });
-        });
-    </script>
 
   </body>
 
